@@ -1,0 +1,15 @@
+import { setup } from "xstate";
+
+interface Context {}
+
+type Event = { type: "something" };
+
+export const searchMachine = setup({
+  types: {
+    context: {} as Context,
+    events: {} as Event,
+  },
+}).createMachine({
+  /** @xstate-layout N4IgpgJg5mDOIC5QGUwEMBOBjAFgAgFk1cBLAOzAGIBFAVzAwE88BhHNMmAbQAYBdRKAAOAe1gkALiRFlBIAB6IALACYANCEaIArAEYAHADoA7MYBsPAMy7re3doCcAXycbUmXIWI5yVOg2Y2Dm5dASQQUXEpGTlFBFUNLQR9XUMlBwyHbXTLHhULZ1cQd2x8IlIKQxKKqEoAMRFaMgg8ACU4WgAbCVheMOExSWlZcLjzJUMzSxVjfX0eY21jJSV9RJ0eCe18q11dRZ4LFZc3dFKvCrAqs5r6xua2ju7e0LlIoZjRxHHJ6dn5xbLVbrBBmBw8QwqfTgpTmByzSxKbQnYo3MreXzXTpgLBSTiUAASJCgOE6xJwEjwADkwPIJH03oNoiNQHFdAttIYHEiVCpLNp+f9jCClNZJjwHJYptowbozPYUdV0ZcsTi8bUiSSySTKQAFDBgABu0lovX4jKiw1iiHZ8rSZn0Dvyju02hBln5hnsZhUSkOSz9Dn2irRFx8lVQ2Nx5FqqEpmtJ5IkkDwAElmrSGeF3szrQh2elDPp+Y7ctpoTxXSC+UZjLt9ssZTL9EoQx5leGrpG1THKN3cVmBpbPqybflLGlMnypcZcgYQXoHOLJWYlKuW+kVG3zuVO4YACJgABG9ywvfksAkaGThjQADNkxgABTsng8ACUfdDu8xh5PTTPThBwiJkrS+eI60hFIa10P0eGLXQFxlEwVCDV0ZgsRxCiKMgRAgOA5CVMNfAtD4WQURAAFozBBajt08H9KipERHlgLoelI3NwNg+wuRsDJK1dKYzDdTQdGQmVfWMIN5nmIN6I7TElRjTiwNHBBHFSYx8gFWZwX0PRLAXaZIVQ+xrFhctNgU4iIzAKN1VUkcKPzQ4VEhSwUm5XQHAM+ZRKSAUJzc1Z1wlGx9Bsxirj-U8VOzUDnLiaYjHLRwVHsbTZm2ALxM5bSgyRFtlkBFwXCAA */
+  id: "Search Machine",
+});
